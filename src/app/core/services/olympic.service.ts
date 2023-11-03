@@ -58,4 +58,8 @@ export class OlympicService {
   getOlympics() {
     return this.olympics$.asObservable();
   }
+
+  getAllCountry(): OlympicCountry[] {
+    return this.country;
+  }
 }
