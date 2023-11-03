@@ -15,9 +15,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.olympics$ = this.olympicService.getOlympics();
 
-    console.log(this.olympics$.subscribe((value) => console.log(value)));
-    this.olympics$.subscribe((value) => {
+    //console.log(this.olympics$.subscribe((value) => console.log(value)));
+    /*this.olympics$.subscribe((value) => {
       console.log(value);
-    });
+    });*/
   }
 }

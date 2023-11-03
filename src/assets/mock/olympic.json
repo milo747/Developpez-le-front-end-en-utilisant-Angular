@@ -6,21 +6,21 @@
       {
         "id": 1,
         "year": 2012,
-        "city": "Londres",
+        "city": "Lond",
         "medalsCount": 28,
         "athleteCount": 372
       },
       {
         "id": 2,
         "year": 2016,
-        "city": "Rio de Janeiro",
+        "city": "Rio de Jan",
         "medalsCount": 28,
         "athleteCount": 375
       },
       {
         "id": 3,
         "year": 2020,
-        "city": "Tokyo",
+        "city": "To",
         "medalsCount": 40,
         "athleteCount": 381
       }
@@ -40,14 +40,14 @@
       {
         "id": 2,
         "year": 2016,
-        "city": "Rio de Janeiro",
+        "city": "o de Janeiro",
         "medalsCount": 17,
         "athleteCount": 312
       },
       {
         "id": 3,
         "year": 2020,
-        "city": "Tokyo",
+        "city": "yo",
         "medalsCount": 17,
         "athleteCount": 321
       }
@@ -55,12 +55,12 @@
   },
   {
     "id": 3,
-    "country": "United States",
+    "country": "ited States",
     "participations": [
       {
         "id": 1,
         "year": 2012,
-        "city": "Londres",
+        "city": "ondres",
         "medalsCount": 109,
         "athleteCount": 610
       },
@@ -87,7 +87,7 @@
       {
         "id": 1,
         "year": 2012,
-        "city": "Londres",
+        "city": "Ldres",
         "medalsCount": 44,
         "athleteCount": 425
       },
