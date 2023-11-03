@@ -1,3 +1,5 @@
 <h2>Olympic games app</h2>
 <hr />
-<p>{{ (olympics$ | async)?.length }} data loaded</p>
+<p>{{ (olympics$ | async)?.[0].country }} data loaded</p>
+<p> {{ this.var}} data loaded</p>
+<p> {{ this.var2[1] }} data loaded</p>
