@@ -2,6 +2,13 @@
 <hr />
 <!-- tester de mattre un if ou bien recuperer un objet model -->
 <p>{{ (olympics$ | async)?.[0].participations[0].medalsCount }} > data loaded</p>
-<p *ngFor="let c of (olympics$ | async)">{{ c.country }} > data loaded {{c.id}}</p>
+<div *ngFor="let c of (olympics$ | async)">{{ c.country }} > data loaded
+    <div *ngFor="let p of c.participations">{{ p.city }}</div>
+    <!-- <div>titi</div> -->
+
+
+</div>
+
+
 <p>{{ test }} data loaded</p>
 <!-- <p>{{count[0].country}} data loaded</p> -->
