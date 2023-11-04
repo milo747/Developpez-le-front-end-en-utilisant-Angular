@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
       .loadInitialData()
       .pipe(take(1))
       .subscribe((value) => {
-        //console.log(value);
+        console.log(value);
         this.olympicService.parseData(value);
       });
   }
