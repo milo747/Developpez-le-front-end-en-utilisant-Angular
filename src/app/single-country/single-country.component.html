@@ -1,6 +1,6 @@
 <p><a [routerLink]="'../../'"> back </a></p>
-<p>country {{ (olympics$ | async)?.[param-1]?.country }}</p>
-
+<!-- <p>country {{ (olympics$ | async)?.[param-1]?.country }}</p> -->
+<p *ngIf="countries[param-1] != undefined">country {{ countries[param-1].country }}</p>
 <!-- <ul>
     <li *ngFor="let item of (olympics$ | async)?.[param-1]?.participations;">
         {{item.city}}
@@ -10,7 +10,7 @@
     </li>
 </ul> -->
 
-
+<!-- 
 <ul>
     <li *ngFor="let item of participations$.getValue()">
         {{item.city}}
@@ -18,6 +18,6 @@
         Medals Count : {{item.medalsCount}}
         Athletes Count : {{item.medalsCount}}
     </li>
-</ul>
+</ul> -->
 <!-- <p>{{participations$.getValue()[0].city}}</p> -->
 <!-- <p *ngIf="participations[0] !== undefined">{{ participations[0].city }}</p> -->
