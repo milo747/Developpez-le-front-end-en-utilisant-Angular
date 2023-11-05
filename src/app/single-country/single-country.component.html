@@ -1,13 +1,23 @@
 <p><a [routerLink]="'../../'"> back </a></p>
 <p>country {{ (olympics$ | async)?.[param-1]?.country }}</p>
 
-<ul>
+<!-- <ul>
     <li *ngFor="let item of (olympics$ | async)?.[param-1]?.participations;">
         {{item.city}}
         {{item.year}}
         Medals Count : {{item.medalsCount}}
         Athletes Count : {{item.medalsCount}}
     </li>
-</ul>
+</ul> -->
 
-<p *ngIf="participations[0] !== undefined">{{ participations[0].city }}</p>
+
+<ul>
+    <li *ngFor="let item of participations$.getValue()">
+        {{item.city}}
+        {{item.year}}
+        Medals Count : {{item.medalsCount}}
+        Athletes Count : {{item.medalsCount}}
+    </li>
+</ul>
+<!-- <p>{{participations$.getValue()[0].city}}</p> -->
+<!-- <p *ngIf="participations[0] !== undefined">{{ participations[0].city }}</p> -->
