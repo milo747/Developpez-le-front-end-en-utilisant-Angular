@@ -1,5 +1,9 @@
 <h2>Olympic games app</h2>
 <hr />
 
-<div *ngFor="let olympics of (olympics$ | async)">{{ olympics.country }} >
-    <div *ngFor="let pTion of olympics.participations">{{ pTion.city }}</div>
+<div *ngFor="let olympics of (olympics$ | async)">
+    <a [routerLink]="'./country/' + olympics.id"> {{ olympics.country }} </a>
+    <div *ngFor="let part of olympics.participations">
+        {{part.city}}
+    </div>
+</div>

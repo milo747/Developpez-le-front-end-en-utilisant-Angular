@@ -10,7 +10,7 @@ import { OlympicService } from 'src/app/core/services/olympic.service';
 })
 export class HomeComponent implements OnInit {
   public olympics$: Observable<Country[] | null> = of(null);
-
+  public linkUrl: string = '/toto';
   constructor(private olympicService: OlympicService) {}
 
   ngOnInit(): void {

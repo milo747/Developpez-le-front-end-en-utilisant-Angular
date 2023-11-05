@@ -10,12 +10,16 @@ import { Country } from '../models/Olympic';
 export class OlympicService {
   private olympicUrl = './assets/mock/olympic.json';
   private olympics$ = new BehaviorSubject<Country[]>([]);
+  private countries: Country[] = [];
 
   constructor(private http: HttpClient) {}
 
   loadInitialData() {
     return this.http.get<Country[]>(this.olympicUrl).pipe(
-      tap((value) => this.olympics$.next(value)),
+      tap((value) => {
+        this.olympics$.next(value);
+        this.countries = value;
+      }),
       catchError((error, caught) => {
         // TODO: improve error handling
         console.error(error);
@@ -24,6 +28,12 @@ export class OlympicService {
         return caught;
       })
     );
+  }
+
+  getCountryById(id: number) {
+    let coun: Country;
+    coun = this.countries.find((country) => country.id == id)!;
+    return coun;
   }
 
   getOlympics() {
